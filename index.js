@@ -29,6 +29,6 @@ app.get('/', function(req, res, next) {
 // })
 
 
-app.listen(process.env.PORT || 3001, function () {
-  console.log('Listening on http://localhost:' + (process.env.PORT || 3001))
+app.listen(3030, function () {
+  console.log('Listening on http://localhost:3030')
 })
