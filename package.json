@@ -1,0 +1,28 @@
+{
+  "name": "nazca-marketing-site",
+  "version": "1.0.0",
+  "description": "nazcabot.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evelyn-McDonald/nazca-marketing-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evelyn-McDonald/nazca-marketing-site/issues"
+  },
+  "homepage": "https://github.com/Evelyn-McDonald/nazca-marketing-site#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.3",
+    "run-sequence": "^2.2.1"
+  }
+}
