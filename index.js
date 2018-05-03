@@ -7,6 +7,8 @@ const app = express()
 
 /* Templates */
 const home = pug.compileFile(__dirname + '/src/templates/home.pug')
+const privacyPolicy = pug.compileFile(__dirname + '/src/templates/privacy-policy.pug')
+const terms = pug.compileFile(__dirname + '/src/templates/terms.pug')
 
 app.use(logger('dev'))
 app.use(bodyParser.json())
@@ -21,12 +23,12 @@ app.get('/', function(req, res, next) {
 })
 
 
-// app.get('/terms', function(req, res, next) {
-//   res.send( terms({ title: 'Terms&Conditions' }) )
-// })
-// app.get('/privacy-policy', function(req, res, next) {
-//   res.send( privacyPolicy({ title: 'PrivacyPolicy' }) )
-// })
+app.get('/terms', function(req, res, next) {
+  res.send( terms({ title: 'Terms&Conditions' }) )
+})
+app.get('/privacy-policy', function(req, res, next) {
+  res.send( privacyPolicy({ title: 'PrivacyPolicy' }) )
+})
 
 
 app.listen(3030, function () {

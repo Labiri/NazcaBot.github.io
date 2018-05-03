@@ -17,6 +17,7 @@ body {
 }
 
 h1 {
+    color: $white;
     font-size: 50px;
     font-family: $font-bold;
     line-height: 50px;   
@@ -41,7 +42,12 @@ p {
 }
 
 a {
-    
+    &:hover {
+        text-decoration: none;
+    }
+    &:active, &:focus {
+        text-decoration: none;
+    }
 }
 
 button {
@@ -61,6 +67,8 @@ button {
 
 /* Layout */
 section {
+    padding: 70px 0;
+    
     &.dark { background: $bg; }
     &.darker { 
         background: $text-primary; 
@@ -68,7 +76,28 @@ section {
     }
 }
 header {
-    
+    padding: 30px 40px;
+    position: absolute;
+    z-index: 99;
+
+    .logo {
+        background: url(../img/logo-white@2x.png) no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        height: 40px;
+        width: 136px;
+        vertical-align: middle;
+    }
+    nav {
+        display: inline-block;
+        padding-left: 50px;
+        a {
+            color: #C5D5FE;
+            font-size: 15px;
+            font-family: $font-semibold;
+            padding: 0 22px;
+        }
+    }
 }
 footer {
     background: $primary;
