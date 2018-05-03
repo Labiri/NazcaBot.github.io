@@ -132,6 +132,9 @@
                 &:hover {
                     .q {
                         color: $primary;
+                        i {
+                            color: $primary;
+                        }
                     }
                 }
                 .q {
@@ -139,46 +142,52 @@
                     display: block;
                     font-size: 20px;
                     padding: 15px 0;
+
+                    i {
+                        float: right;
+                        font-size: 14px;
+                        margin-top: 4px;
+                    }
+                    .fa-minus {
+                        display: none;
+                    }
                 }
                 .a {
+                    color: $text-secondary;
                     display: none;
+                    margin-bottom: 20px;
+                }
+
+                &.active {
+                    .a {
+                        display: block;
+                    }
                 }
             }
         }
     }
 
     #team {
+        overflow: hidden;
+        padding-bottom: 180px;
+
         &::after {
             background: url(/img/shape-3.png) no-repeat;
             background-size: 100%;
             content: '';
             height: 330px;
-            width: 98px;
+            width: 88px;
             position: absolute;
             right: -6px;
-            bottom: -40px;
+            bottom: 70px;
         }
-    }
 
-    .lead-collector {
-        background-color: #5180FF;
-        border-radius: 6px;
-        max-width: 402px;
-        overflow: auto;
-        padding: 6px 6px 6px 22px;;
-        -webkit-box-shadow: inset 0 -1px 0 0 rgba(255,255,255,0.08), inset 0 1px 0 0 rgba(255,255,255,0.1);
-        box-shadow: inset 0 -1px 0 0 rgba(255,255,255,0.08), inset 0 1px 0 0 rgba(255,255,255,0.1);
-
-        input {
-            background: none;
-            color: $white;
-            font-size: 17px;
-            margin-top: 9px;
-            min-width: 220px;
-        }
-        button {
-            float: right;
-            text-transform: uppercase;
+        .member-wrapper {
+            padding: 20px;
+            .member {
+                background: $bg;
+                height: 310px;
+            }
         }
     }
 }
