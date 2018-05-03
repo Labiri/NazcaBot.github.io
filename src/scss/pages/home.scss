@@ -79,8 +79,8 @@
 
     .feature-section-3 {
         background: url(/img/bg-features.png) no-repeat;
-        background-size: 100%;
-        padding: 146px 0;
+        background-size: 100% 100%;
+        padding: 124px 0;
         z-index: 99;
 
         &::before {
@@ -92,6 +92,10 @@
             position: absolute;
             top: 0;
             right: 0;
+        }
+
+        img {
+            width: 44px;
         }
     }
 
@@ -114,10 +118,20 @@
             list-style: none;
 
             li {
-                .q {
-                    display: block;
-                    font-size: 20px;
-                    padding: 15px 0;
+                color: $text-secondary;
+                display: block;
+                font-size: 20px;
+                padding: 15px 0;
+                i {
+                    color: $text-secondary;
+                    margin-right: 16px;
+                }
+
+                &.complete {
+                    color: $text-primary;
+                    i {
+                        color: $primary;
+                    }
                 }
             }
         }
@@ -141,12 +155,13 @@
                     border-bottom: 2px solid $outline;
                     display: block;
                     font-size: 20px;
-                    padding: 15px 0;
+                    padding: 15px 15px 15px 0;
 
                     i {
                         float: right;
                         font-size: 14px;
                         margin-top: 4px;
+                        margin-right: -15px;
                     }
                     .fa-minus {
                         display: none;
