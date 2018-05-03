@@ -2,6 +2,7 @@
     .hero {
         padding: 0;
         position: relative;
+        z-index: 99;
 
         &::before {
             content: '';
@@ -26,8 +27,8 @@
         }
 
         img {
-            margin-top: 200px;
-            width: 590px;
+            margin-top: 180px;
+            width: 630px;
         }
 
         .lead-collector {
@@ -71,7 +72,91 @@
             padding: 14px 24px;
         }
         img {
+            margin-bottom: 14px;
             width: 78px;
+        }
+    }
+
+    .feature-section-3 {
+        background: url(/img/bg-features.png) no-repeat;
+        background-size: 100%;
+        padding: 146px 0;
+        z-index: 99;
+
+        &::before {
+            background: url(/img/shape-1.png) no-repeat;
+            background-size: 100%;
+            content: '';
+            height: 183px;
+            width: 131px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    #roadmap {
+        padding-top: 200px;
+        margin-top: -140px;
+
+        &::after {
+            background: url(/img/shape-2.png) no-repeat;
+            background-size: 100%;
+            content: '';
+            height: 195px;
+            width: 98px;
+            position: absolute;
+            left: -6px;
+            bottom: -40px;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                .q {
+                    display: block;
+                    font-size: 20px;
+                    padding: 15px 0;
+                }
+            }
+        }
+    }
+
+    #faq {
+        ul {
+            cursor: pointer;
+            list-style: none;
+
+            li {
+                &:hover {
+                    .q {
+                        color: $primary;
+                    }
+                }
+                .q {
+                    border-bottom: 2px solid $outline;
+                    display: block;
+                    font-size: 20px;
+                    padding: 15px 0;
+                }
+                .a {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #team {
+        &::after {
+            background: url(/img/shape-3.png) no-repeat;
+            background-size: 100%;
+            content: '';
+            height: 330px;
+            width: 98px;
+            position: absolute;
+            right: -6px;
+            bottom: -40px;
         }
     }
 

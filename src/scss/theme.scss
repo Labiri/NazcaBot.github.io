@@ -42,6 +42,7 @@ p {
 }
 
 a {
+    @include transition(.2s ease-in-out);
     &:hover {
         text-decoration: none;
     }
@@ -98,6 +99,7 @@ em {
 /* Layout */
 section {
     padding: 70px 0;
+    position: relative;
 
     &.dark { background: $bg; }
     &.darker { 
@@ -108,7 +110,7 @@ section {
 header {
     padding: 30px 40px;
     position: absolute;
-    z-index: 99;
+    z-index: 999;
 
     .logo {
         background: url(../img/logo-white@2x.png) no-repeat;
@@ -126,6 +128,9 @@ header {
             font-size: 15px;
             font-family: $font-semibold;
             padding: 0 22px;
+            &:hover {
+                color: $white;
+            }
         }
     }
 }
