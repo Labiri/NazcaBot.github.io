@@ -28,7 +28,8 @@
 
         img {
             margin-top: 180px;
-            width: 630px;
+            max-width: 630px;
+            width: 100%;
         }
 
         .lead-collector {
@@ -45,11 +46,29 @@
               color: rgba(255,255,255,0.7);
             }
         }
+
+        @media screen and (max-width: 991px) {
+            text-align: center;
+
+            &::before {
+                background-size: 110% 100%;
+            }
+            h1 {
+                margin-top: 190px;
+            }
+            .lead-collector {
+                margin: 0 auto;
+            }
+            img {
+                margin-top: 50px;
+            }
+        }
     }
 
     .features-section-1 {
         padding-top: 304px;
         margin-top: -116px;
+
         .feature {
             padding: 40px 0;
             img {
@@ -65,10 +84,17 @@
                 width: 90%;
             }
         }
+        
+        @media screen and (max-width: 991px) {
+            margin-top: -256px;
+            .feature img {
+                margin-top: -70px;
+            }
+        }
     }
 
     .features-section-2 {
-        div {
+        .feature {
             padding: 14px 24px;
         }
         img {
@@ -97,6 +123,13 @@
         img {
             width: 44px;
         }
+
+        @media screen and (max-width: 690px) {
+            background: $text-primary;
+            &::before {
+                top: -20px;
+            }
+        }
     }
 
     #roadmap {
@@ -112,6 +145,12 @@
             position: absolute;
             left: -6px;
             bottom: -40px;
+        }
+
+        @media screen and (max-width: 991px) {
+            &::after {
+                bottom: -110px;
+            }
         }
 
         ul {

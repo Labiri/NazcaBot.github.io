@@ -1,4 +1,13 @@
 // -------------------------------------
+// Mobile menu
+// -------------------------------------
+var mobileToggle = document.getElementById('mobile-toggle')
+
+mobileToggle.addEventListener("click", function() {
+    document.body.classList.toggle('open')
+})
+
+// -------------------------------------
 // FAQ accordion
 // -------------------------------------
 var faqItem = document.querySelectorAll('#faq .q')
