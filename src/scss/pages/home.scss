@@ -240,8 +240,28 @@
         .member-wrapper {
             padding: 20px;
             .member {
-                background: $bg;
-                height: 310px;
+                img {
+                    width: 100%;
+                }
+                .member-details {
+                    background: rgba(255,255,255,0.6);
+                    padding: 20px;
+                    width: 80%;
+                    margin-top: -90px;
+                    position: absolute;
+
+                    .name {
+                        color: $primary;
+                        font-family: $font-semibold;
+                        font-size: 20px;
+
+                    }
+                    .social-links {
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
             }
         }
     }
