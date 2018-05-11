@@ -72,9 +72,19 @@
 
         .feature {
             padding: 40px 0;
-            img {
-                margin-top: -124px;
-                width: 100%;
+
+            .feature-img {
+                text-align: center;
+                img {
+                    margin-top: -124px;
+                    width: 100%;
+                    @media screen and (max-width: 991px) {
+                        margin-top: 0;
+                    }
+                    @media screen and (max-width: 767px) {
+                        max-width: 300px;
+                    }
+                }
             }
             h4 {
                 border-bottom: 2px solid $outline-dark;
@@ -235,11 +245,24 @@
             position: absolute;
             right: 0;
             bottom: 70px;
+
+            @media screen and (max-width: 991px) {
+                height: 164px;
+                width: 68px;
+            }
         }
 
         .member-wrapper {
             padding: 40px;
+
+            @media screen and (max-width: 991px) {
+                padding: 16px;
+            }
+
             .member {
+                max-width: 280px;
+                margin: 0 auto;
+
                 img {
                     width: 100%;
                 }
