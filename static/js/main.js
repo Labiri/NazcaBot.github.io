@@ -27,3 +27,11 @@ faqItem.forEach(function(i) {
         }
     })
 })
+
+
+// -------------------------------------
+// Init Waitlist
+// -------------------------------------
+document.addEventListener("DOMContentLoaded", function(event) {
+    window.waitlisted.start({domain: "nazca.app.waitlisted.co"})
+});
