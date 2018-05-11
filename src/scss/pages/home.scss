@@ -238,27 +238,29 @@
         }
 
         .member-wrapper {
-            padding: 20px;
+            padding: 40px;
             .member {
                 img {
                     width: 100%;
                 }
                 .member-details {
                     background: rgba(255,255,255,0.6);
-                    padding: 20px;
+                    padding: 8px 20px;
                     width: 80%;
                     margin-top: -90px;
                     position: absolute;
 
                     .name {
                         color: $primary;
+                        display: block;
                         font-family: $font-semibold;
                         font-size: 20px;
-
                     }
-                    .social-links {
-                        a {
+                    a {
+                        i {
                             color: $white;
+                            font-size: 16px;
+                            margin-right: 6px;
                         }
                     }
                 }
