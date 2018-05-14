@@ -24,7 +24,7 @@ app.get('/', function(req, res, next) {
 
 
 app.get('/terms', function(req, res, next) {
-  res.send( terms({ title: 'Terms&Conditions' }) )
+  res.send( terms({ title: 'Terms' }) )
 })
 app.get('/privacy-policy', function(req, res, next) {
   res.send( privacyPolicy({ title: 'PrivacyPolicy' }) )

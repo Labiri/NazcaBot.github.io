@@ -76,7 +76,7 @@
             .feature-img {
                 text-align: center;
                 img {
-                    margin-top: -124px;
+                    margin-top: -130px;
                     width: 100%;
                     @media screen and (max-width: 991px) {
                         margin-top: 0;
@@ -85,6 +85,9 @@
                         max-width: 300px;
                     }
                 }
+            }
+            h2 {
+                line-height: 30px;
             }
             h4 {
                 border-bottom: 2px solid $outline-dark;

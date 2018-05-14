@@ -1,0 +1,26 @@
+.Terms {
+	.terms-container {
+		padding: 80px 0;
+	}
+
+	header {
+		background: $primary;
+	}
+
+	.button.outline-primary {
+		border: 1px solid $white;
+		color: $white;
+	}
+
+	ul {
+		li {
+			p {
+				margin: 0;
+			}
+		}
+	}	
+
+	.section {
+		margin-bottom: 20px;
+	}
+}
