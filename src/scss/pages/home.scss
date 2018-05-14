@@ -296,6 +296,11 @@
                         font-family: $font-semibold;
                         font-size: 20px;
                     }
+                    .title {
+                        display: block;
+                        margin-top: 2px;
+                        font-family: $font-semibold;
+                    }
                     a {
                         i {
                             color: $white;
