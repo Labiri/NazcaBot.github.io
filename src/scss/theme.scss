@@ -304,6 +304,7 @@ footer {
 }
 
 body.open {
+    overflow: hidden;
     header {
         .logo {
             display: none;
